@@ -134,8 +134,6 @@ public class Fragment_ver_estado_de_cuenta_completo extends Fragment implements 
                     estado_de_cuenta_completo.setCon_tran_nombre( "CONSIGNACIÓN" );
                 }
 
-
-
                 listaEstadoCuentaCompleto.add(estado_de_cuenta_completo);
             }
             dialog.hide();
