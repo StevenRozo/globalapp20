@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
         //fm.beginTransaction().replace(R.id.escenario, new fragment_login()).commit();
 
-
-
        Intent intencion = new Intent(getApplicationContext(),Main_Portada.class);
 
 
@@ -30,5 +28,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intencion);
     }
 
-    //prueba de control de cambios git
 }
