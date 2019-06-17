@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorblanco"
+    tools:context=".Fragment_VerEstadoDeCuenta">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESTADO DE CUENTA"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/rojo"
+
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbl_nombre_suscriptor"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Contrato No:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblContrato_susc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="# de contrato"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Valor Mensualidad:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblValorServicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="ValorMensualidad"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Documento:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblDocumento_susc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Documento"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Dirección:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblDireccionUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:text="Dirección"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="120dp"
+                android:text="CONCEPTO"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Servicio:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblServicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Servicio"
+                    android:textColor="@color/colorPrimaryDark"
+ />
+
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Periodo facturado del:"
+
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblPeriodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Periodo"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="126dp"
+                android:text="SERVICIO"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Estado de la cuenta:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblEstadoCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Estado cuenta"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Fecha de facturación:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblFechafacturacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Fechafacturacion"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Fecha limite de pago:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblFechalimitePago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="FechaLimitePago"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Deuda anterior:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblDeudaAnterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="DeudaAnterior"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Cargo actual:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblCargoActual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Cargo Actual"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="SUBTOTAL:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblSubtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Subtotal"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Descuento pronto pago:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblDescuentoProntoPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="DesceuntoProntoP"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Antes de:"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblAntesDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Antes de"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="TOTAL A PAGAR:
+(con pronto pago)"
+
+                android:textColor="@color/rojo"
+
+                />
+
+
+            <TextView
+                android:id="@+id/lblTotalApagarConPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:text="Total A pagar"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+
+
+
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="TOTAL A PAGAR:
+(sin pronto pago)"
+                android:textColor="@color/rojo"
+
+                />
+
+
+            <TextView
+                android:id="@+id/lblTotalPagarSinPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:text="Total A Pagar"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="100dp"
+                android:text="Efectue su pago en:"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Realice su consignación en el banco Davivienda
+Cta. Ahorros No. 472970059102 a nombre de
+GLOBALPLAY S.A.S NIT. 901.182.340-8
+"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Para cargar su pago envíe el comprobante
+al whatsapp No:"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+            <TextView
+                android:id="@+id/lblWhatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="No Whatsapp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+
+
+
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="También puede acercarse a nuestra oficina ubicada en:"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+            <TextView
+                android:id="@+id/lblDireccionSucursal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Dirección Sucursal"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center_horizontal"
+
+                android:textColor="@color/rojo"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pantallas.globalapp20"
+    android:installLocation="preferExternal"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens>
+        android:smallScreens="true"
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_Portada" />
+        <activity android:name=".Main_validacion_existe_usuario"
+                  android:parentActivityName=".Main_Portada"
+            />
+        <activity
+            android:name=".Main_usuario_no_existe"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main_login" />
+        <activity android:name=".Main_Registro_De_UsuYPass" />
+
+        <activity
+            android:name=".Main_menu_desplegable"
+            android:label="@string/title_activity_main_menu_desplegable"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service android:name=".NotificacionService"/>
+
+    </application>
+
+</manifest>

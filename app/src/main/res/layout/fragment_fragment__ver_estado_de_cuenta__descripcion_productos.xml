@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorblanco"
+    tools:context=".Fragment_VerEstadoDeCuenta_Descripcion_productos">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtprueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el servicio "
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        />
+
+    <Spinner
+        android:id="@+id/SpnServicio"
+        android:layout_width="match_parent"
+        android:layout_height="42sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="40sp"
+        android:background="@drawable/cajatextoredonda"
+>
+
+    </Spinner>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="70dp"
+                android:text="DESCRIPCIÓN DEL SERVICIO"
+                android:textSize="15dp"
+
+                android:textColor="@color/colorAccent"
+
+                />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Servicio:"
+                    android:textSize="16sp"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblservicio_Descripcion"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:text="Servicio_Descripcion"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Valor:"
+                    android:textSize="16sp"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblservicio_valor"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:text="servicio_valor"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Descuento X combo:"
+                    android:textSize="16sp"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblservicio_DescuentoXcombo"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:text="DescuentoXcombo"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Total Servicio:"
+                    android:textSize="16sp"
+                    android:textColor="@color/rojo"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/lblTv_TotalServicio"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:text="Total servicio"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

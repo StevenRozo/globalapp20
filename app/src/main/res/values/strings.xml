@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GlobalApp1.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_fragment">Inicio de Sesión</string>
+    <string name="tittle_boton">Iniciar Sesión</string>
+    <string name="hola">Hola</string>
+    <string name="documento">Documento</string>
+    <string name="pregunta"> ¿ES USTED?</string>
+    <string name="datosSI">SI</string>
+    <string name="datosNO">NO</string>
+    <string name="comienzaLog">COMENZANDO</string>
+    <string name="VolverAVerifCedula">Volviendo</string>
+    <string name="title_activity_main_menu">Main_menu</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_menu2">Main_menu2</string>
+
+
+    <string name="title_activity_main_menu_desplegable">Menú</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Global Play</string>
+    <string name="nav_header_subtitle">servicioalcliente@globalplay.tv</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+</resources>

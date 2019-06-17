@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="HAZLO TU MISMO"></item>
+        <item
+            android:id="@+id/nav_estadocuenta"
+            android:icon="@drawable/riqueza"
+            android:title="Ver estado de cuenta" />
+        <item
+            android:id="@+id/nav_fotoComprobante"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Enviar comprovante de pago" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/periodico"
+            android:title="Noticias" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/interrogacion"
+            android:title="¿ Tienes preguntas ?" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="CONTENIDO EN VIVO"></item>
+        <item
+            android:id="@+id/nav_programacion_canales"
+            android:icon="@drawable/television"
+            android:title="Programación de canales" />
+        <item
+            android:id="@+id/nav_canal_via_tres_vivo"
+            android:icon="@drawable/envivo"
+            android:title="Canal Via3TV" />
+        <item
+            android:id="@+id/nav_tienda_virtual"
+            android:icon="@drawable/cestacompra"
+            android:title="Tienda Online" />
+
+
+    </group>
+
+
+
+
+    <item android:title="CONTÁCTANOS">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/internet"
+                android:title="Información general" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ubicacion"
+                android:title="Zona de cobertura" />
+        </menu>
+    </item>
+
+</menu>

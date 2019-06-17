@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopersonalizadouno"
+    tools:context=".Fragment_menu_desplegable_VerContratos"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/lblNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="NOMBRE DE USUARIO"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/lblCedulaUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="CEDULA USUARIO"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245"
+        tools:layout_editor_absoluteX="20dp" />
+
+
+    <TextView
+        android:id="@+id/lblSeleccione"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:text="Seleccione el número del contrato"
+        android:layout_marginLeft="70sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <Spinner
+        android:id="@+id/SpnContratosUsu"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+
+
+        android:background="@drawable/cajatextoredonda"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnVerEstadoCuentaUsu_completo"
+        android:layout_width="236dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        android:shadowColor="#fff"
+        android:text="HISTORIAL DE CUENTA"
+        android:textSize="17sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+
+    <Button
+        android:id="@+id/btnVerEstadoCuentaUsu"
+        android:layout_width="236dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/boton_redondo"
+        android:text="VER ESTADO DE CUENTA"
+        android:textSize="17sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="517dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/boton_redondo_rojo"
+        android:text="SALIR"
+        android:textSize="17sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/lblContratoPrueba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:text=""
+            android:textColor="@color/rojo"
+
+            android:visibility="invisible" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
