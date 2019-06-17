@@ -21,7 +21,6 @@ public class Main_Portada extends AppCompatActivity {
     Button btn_ingresar,btn_sincuenta;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,27 +60,20 @@ public class Main_Portada extends AppCompatActivity {
             }
         });
 
-
     }
     //metodo que da ingreso al login
  public void ingresarAlogin(){
      Intent intencion = new Intent(getApplicationContext(),Main_validacion_existe_usuario.class);
-
      startActivity(intencion);
 
     }
 
-
     //metodo que muestra la imagen de 'no eres cliente'
     public void NoesCliente(){
-
-
         Intent intencion = new Intent(getApplicationContext(),Main_usuario_no_existe.class);
-
         startActivity(intencion);
 
     }
-
 
 
 //metodo para enlazar los puntos indicadores de imagen en el slider de la portada
@@ -98,10 +90,7 @@ public class Main_Portada extends AppCompatActivity {
         }
         if(mDots.length > 0){
             mDots[position].setTextColor(getResources().getColor(R.color.colorAccent));
-
-
         }
-
     }
 
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener(){
